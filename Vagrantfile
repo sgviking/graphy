@@ -7,7 +7,7 @@ Vagrant.configure(2) do |config|
     graphy.vm.box = "ubuntu/trusty64"
     graphy.vm.hostname = "graphy"
 
-    graphy.vm.network "forwarded_port", guest: 80, host: 80
+    graphy.vm.network "forwarded_port", guest: 7474, host: 7474
 
     graphy.vm.synced_folder "/home/viking/Downloads/", "/home/vagrant/Downloads"
     graphy.ssh.forward_x11 = true
