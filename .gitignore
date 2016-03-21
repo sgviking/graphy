@@ -1,2 +1,3 @@
 .vagrant/
 .swp
+roles/deimosfr.neo4j/*
