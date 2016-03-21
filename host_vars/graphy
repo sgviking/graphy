@@ -1,0 +1,5 @@
+---
+neo4j_install_java: true 
+neo4j_install_spatial: true 
+neo4j_spatial_version: '0.15-neo4j-2.3.0'
+neo4j_server_http_log_enabled: true 

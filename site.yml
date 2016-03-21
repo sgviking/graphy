@@ -1,0 +1,13 @@
+---
+- name: NEO4j Graphing database
+  hosts: all
+  become: yes
+  roles:
+    - deimosfr.neo4j
+  tasks:
+    - name: Install developer tools
+      apt:
+        name: "{{ item }}"
+      with_items:
+        - chromium-browser
+        - imagemagick 
