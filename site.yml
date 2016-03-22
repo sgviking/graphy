@@ -5,9 +5,15 @@
   roles:
     - deimosfr.neo4j
   tasks:
-    - name: Install developer tools
+    - name: Install apt packages
       apt:
         name: "{{ item }}"
       with_items:
         - chromium-browser
         - imagemagick 
+        - python-pip
+    - name: Install python packages
+      pip:
+        name: "{{ item }}"
+      with_items:
+        - py2neo
